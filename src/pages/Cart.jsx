@@ -47,7 +47,6 @@ const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
   ${mobile({ flexDirection: "column" })}
-
 `;
 
 const Info = styled.div`
@@ -66,7 +65,7 @@ const ProductDetail = styled.div`
 `;
 
 const Image = styled.img`
-  width: 200px;
+  width: 250px;
 `;
 
 const Details = styled.div`
@@ -189,10 +188,10 @@ const Cart = () => {
               <PriceDetail>
                 <ProductAmountContainer>
                   <Add />
-                  <ProductAmount>2</ProductAmount>
+                  <ProductAmount>1</ProductAmount>
                   <Remove />
                 </ProductAmountContainer>
-                <ProductPrice>$ 30</ProductPrice>
+                <ProductPrice>Rs.800</ProductPrice>
               </PriceDetail>
             </Product>
             <Hr />
@@ -204,7 +203,7 @@ const Cart = () => {
                     <b>Product:</b> HAKURA T-SHIRT
                   </ProductName>
                   <ProductId>
-                    <b>ID:</b> 93813718293
+                    <b>ID:</b> 83813718293
                   </ProductId>
                   <ProductColor color="gray" />
                   <ProductSize>
@@ -218,7 +217,7 @@ const Cart = () => {
                   <ProductAmount>1</ProductAmount>
                   <Remove />
                 </ProductAmountContainer>
-                <ProductPrice>$ 20</ProductPrice>
+                <ProductPrice>Rs.500</ProductPrice>
               </PriceDetail>
             </Product>
           </Info>
@@ -226,19 +225,19 @@ const Cart = () => {
             <SummaryTitle>ORDER SUMMARY</SummaryTitle>
             <SummaryItem>
               <SummaryItemText>Subtotal</SummaryItemText>
-              <SummaryItemPrice>$ 80</SummaryItemPrice>
+              <SummaryItemPrice>Rs. 1300</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Estimated Shipping</SummaryItemText>
-              <SummaryItemPrice>$ 5.90</SummaryItemPrice>
+              <SummaryItemPrice>Rs. 150</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Shipping Discount</SummaryItemText>
-              <SummaryItemPrice>$ -5.90</SummaryItemPrice>
+              <SummaryItemPrice>- Rs.150</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem type="total">
               <SummaryItemText>Total</SummaryItemText>
-              <SummaryItemPrice>$ 80</SummaryItemPrice>
+              <SummaryItemPrice>Rs. 1300</SummaryItemPrice>
             </SummaryItem>
             <Button>CHECKOUT NOW</Button>
           </Summary>
